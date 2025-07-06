@@ -8,35 +8,52 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Dark futuristic theme with enhanced contrast */
+    --background: 220 25% 5%;
+    --foreground: 210 40% 98%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 220 20% 8%;
+    --card-foreground: 210 40% 95%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 220 20% 8%;
+    --popover-foreground: 210 40% 95%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 217 92% 60%;
+    --primary-foreground: 220 25% 5%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 220 15% 12%;
+    --secondary-foreground: 210 40% 90%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 220 15% 15%;
+    --muted-foreground: 215 20% 65%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 264 83% 70%;
+    --accent-foreground: 220 25% 5%;
 
-    --destructive: 0 84.2% 60.2%;
+    --destructive: 0 84% 60%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 220 15% 20%;
+    --input: 220 15% 15%;
+    --ring: 217 92% 60%;
 
-    --radius: 0.5rem;
+    /* Custom design tokens for futuristic portfolio */
+    --glow-primary: 217 92% 60%;
+    --glow-secondary: 264 83% 70%;
+    --glow-accent: 173 80% 65%;
+    
+    --gradient-primary: linear-gradient(135deg, hsl(217 92% 60%), hsl(264 83% 70%));
+    --gradient-secondary: linear-gradient(135deg, hsl(264 83% 70%), hsl(173 80% 65%));
+    --gradient-dark: linear-gradient(135deg, hsl(220 25% 5%), hsl(220 20% 8%));
+    
+    --shadow-glow: 0 0 30px hsl(var(--glow-primary) / 0.3);
+    --shadow-glow-lg: 0 0 50px hsl(var(--glow-primary) / 0.4);
+    --shadow-card: 0 8px 32px hsl(220 25% 2% / 0.5);
+    
+    --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-slide: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+
+    --radius: 0.75rem;
 
     --sidebar-background: 0 0% 98%;
 
