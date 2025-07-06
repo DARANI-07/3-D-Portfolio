@@ -22,7 +22,7 @@ const SkillsSection = () => {
     // Backend Skills
     { name: 'Node.js', percentage: 85, category: 'backend', color: 'from-green-500 to-emerald-500' },
     { name: 'Python', percentage: 80, category: 'backend', color: 'from-blue-500 to-yellow-500' },
-    { name: 'Java', percentage: 75, category: 'backend', color: 'from-red-500 to-orange-500' },
+    { name: 'Java', percentage: 82, category: 'backend', color: 'from-red-500 to-orange-500' },
     { name: 'MongoDB', percentage: 75, category: 'backend', color: 'from-green-500 to-teal-500' },
     { name: 'REST APIs', percentage: 88, category: 'backend', color: 'from-purple-500 to-pink-500' },
     
