@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react';
-import profileImage from '@/assets/profile-image.png';
 
 const HeroSection = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -20,32 +19,23 @@ const HeroSection = () => {
       <div className={`container mx-auto px-6 text-center relative z-10 transition-all duration-1000 ${
         isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
       }`}>
-        {/* Profile Image */}
-        <div className="mb-8 flex justify-center">
-          <div className="relative">
-            <div className="w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden border-4 border-glow-primary/50 shadow-glow-lg animate-glow-pulse">
-              <img
-                src={profileImage}
-                alt="Daranidaran Profile"
-                className="w-full h-full object-cover"
-              />
-            </div>
-            <div className="absolute inset-0 rounded-full bg-gradient-primary opacity-20 animate-pulse" />
-          </div>
-        </div>
 
         {/* Main Heading */}
-        <div className="space-y-4 mb-8">
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold">
+        <div className="space-y-6 mb-12">
+          <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold">
             <span className="text-foreground">Hi, I'm </span>
             <span className="bg-gradient-primary bg-clip-text text-transparent animate-fade-in">
               Daranidaran
             </span>
           </h1>
           
-          <h2 className="text-xl md:text-2xl lg:text-3xl text-muted-foreground font-light">
-            Full Stack Developer
+          <h2 className="text-2xl md:text-3xl lg:text-4xl text-muted-foreground font-light">
+            Creative Developer | Futuristic Thinker
           </h2>
+          
+          <div className="flex justify-center">
+            <div className="w-32 h-1 bg-gradient-primary rounded-full animate-pulse" />
+          </div>
         </div>
 
         {/* Description */}

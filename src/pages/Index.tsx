@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import Navigation from '@/components/Navigation';
+import LoadingScreen from '@/components/LoadingScreen';
 import HeroSection from '@/components/HeroSection';
 import AboutSection from '@/components/AboutSection';
 import SkillsSection from '@/components/SkillsSection';
@@ -9,6 +10,7 @@ import ContactSection from '@/components/ContactSection';
 
 const Index = () => {
   const [currentSection, setCurrentSection] = useState(0);
+  const [isLoading, setIsLoading] = useState(true);
   
   const sections = [
     { component: HeroSection, name: 'Home', id: 'home' },
@@ -41,6 +43,10 @@ const Index = () => {
       behavior: 'smooth'
     });
   };
+
+  if (isLoading) {
+    return <LoadingScreen onComplete={() => setIsLoading(false)} />;
+  }
 
   return (
     <div className="relative bg-gradient-dark">
